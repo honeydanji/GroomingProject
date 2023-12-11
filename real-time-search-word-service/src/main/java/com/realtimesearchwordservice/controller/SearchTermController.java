@@ -20,7 +20,7 @@ public class SearchTermController {
             searchTermService.saveDocumentService(searchTermDocument);
             return ResponseEntity.ok("검색어가 성공적으로 저장 되었습니다.");
         } catch (Exception e) {
-            return ResponseEntity.status(500).body("검색어 저장중 에러발생.");
+            return ResponseEntity.badRequest().body("검색어 저장중 에러발생.");
         }
     }
 }
