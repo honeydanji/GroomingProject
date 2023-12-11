@@ -1,6 +1,7 @@
 package com.realtimesearchwordservice.document;
 
 import lombok.Getter;
+import lombok.NonNull;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
@@ -12,8 +13,9 @@ public class SearchTermDocument {
 
     @Id
     @Field(type = FieldType.Keyword)
-    private String id;
+    private Long id;
 
+    @NonNull
     @Getter
     @Setter
     @Field(type = FieldType.Text)
