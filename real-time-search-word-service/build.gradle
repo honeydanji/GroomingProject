@@ -32,6 +32,10 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'com.internetitem', name: 'logback-elasticsearch-appender', version: '1.6'
+					// SpringBoot 로그를 ElasticSearch 로 전송할 수 있음.
+	implementation group: 'dev.akkinoc.spring.boot', name: 'logback-access-spring-boot-starter', version: '4.1.0'
+					//  HTTP 액세스와 관련된 로깅가능.
 }
 
 dependencyManagement {
