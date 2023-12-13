@@ -1,6 +1,6 @@
 package com.realtimesearchwordservice.document;
 
-import lombok.Getter;
+
 import lombok.NonNull;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
@@ -8,7 +8,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
-@Document(indexName = "searchTerm")
+@Document(indexName = "searchterm") // indexName 은 소문자로만 작성해야 한다.
 public class SearchTermDocument {
 
     @Id
@@ -16,7 +16,6 @@ public class SearchTermDocument {
     private Long id;
 
     @NonNull
-    @Getter
     @Setter
     @Field(type = FieldType.Text)
     private String searchTerm;
