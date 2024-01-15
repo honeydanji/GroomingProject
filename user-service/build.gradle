@@ -38,6 +38,10 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '3.2.1'
+	// https://mvnrepository.com/artifact/com.h2database/h2
+	runtimeOnly group: 'com.h2database', name: 'h2', version: '2.2.224'
+	// https://mvnrepository.com/artifact/org.modelmapper/modelmapper
+	implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.2.0'
 }
 
 dependencyManagement {
