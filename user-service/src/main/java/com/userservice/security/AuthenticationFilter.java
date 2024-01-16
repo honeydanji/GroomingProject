@@ -69,4 +69,14 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
         response.addHeader("token", token);
         response.addHeader("userEmail", memberDetails.getEmail());
     }
+
+    @Override
+    protected void unsuccessfulAuthentication(HttpServletRequest request,
+                                              HttpServletResponse response,
+                                              AuthenticationException failed) throws IOException, ServletException {
+
+        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        response.getWriter().write("Invalided login object");
+        response.getWriter().flush();
+        response.getWriter().close();    }
 }
