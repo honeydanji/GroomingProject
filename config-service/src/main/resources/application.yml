@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/honeydanji/SharedAlbumProject-config.git
+          username: tjdwls3680@naver.com
+          password: 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
+
