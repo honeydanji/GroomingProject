@@ -15,6 +15,6 @@ spring:
       ddl-auto: create-drop
     show-sql: true
 
-token:
-  expiration_time: 86400000
-  secret: ekswlsmstptkddptjrkwkdrnldudnsalsldjcuvlsturkddkwl
+#token:
+#  expiration_time: 86400000
+#  secret: ekswlsmstptkddptjrkwkdrnldudnsalsldjcuvlsturkddkwl
