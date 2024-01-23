@@ -1,0 +1,11 @@
+cloud:
+  aws:
+    region:
+      static: ap-northeast-2
+    s3:
+      bucket: albumbucket
+    stack:
+      auto: false
+    credentials:
+      secret-key: tVKxfn1Qr3ceSuvtnzF9YLFWA3oh0dBrsBC8zv7/
+      access-key: AKIAU6GDWJIT3STMYG62
