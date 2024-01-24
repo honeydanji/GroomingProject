@@ -19,8 +19,7 @@ public class Album {
     @Column(nullable = false, unique = true)
     private String title;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "pictureId")
+    @OneToMany(mappedBy = "album", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Pictures> pictures;
 
     @CreationTimestamp
