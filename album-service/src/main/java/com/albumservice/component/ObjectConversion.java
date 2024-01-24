@@ -15,9 +15,9 @@ public class ObjectConversion {
         return mapper.map(requestAlbum, AlbumDto.class);
     }
 
-    public Album albumDtoToEntity(Album albumEntity) {
+    public Album albumDtoToEntity(AlbumDto albumDto) {
         ModelMapper mapper = new ModelMapper();
         mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
-        return mapper.map(albumEntity, Album.class);
+        return mapper.map(albumDto, Album.class);
     }
 }
