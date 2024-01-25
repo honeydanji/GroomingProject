@@ -2,7 +2,6 @@ package com.albumservice.service;
 
 import com.albumservice.component.ObjectConversion;
 import com.albumservice.dto.AlbumDto;
-import com.albumservice.dto.PicturesDto;
 import com.albumservice.dto.S3BucketDto;
 import com.albumservice.entity.Album;
 import com.albumservice.entity.Pictures;
